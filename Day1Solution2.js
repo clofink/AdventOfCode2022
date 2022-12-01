@@ -1,5 +1,6 @@
 function day1Solution2(data) {
     let items = data.split('\r\n');
+    if (items.length < 1) items.split('\n'); // acts as a check for UNIX like endings (on my Mac)
     items.push(""); // bit of a hack since there's no empty line after the last item so it never gets added to the total
     let totals = [];
     let tempTotal = 0;
