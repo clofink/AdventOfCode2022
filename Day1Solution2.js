@@ -13,6 +13,5 @@ function day1Solution2(data) {
         }
     }
     totals.sort((a,b) => a < b ? 1 : -1);
-    console.log(totals)
     return totals[0] + totals[1] + totals[2];
 }
