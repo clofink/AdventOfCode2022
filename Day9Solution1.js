@@ -19,31 +19,22 @@ function day9Solution1(data) {
             switch (direction) {
                 case "U":
                     headY--;
-                    if (!isTailOrthogonal()) {
-                        updateTail()
-                    }
                     break;
                 case "D":
                     headY++;
-                    if (!isTailOrthogonal()) {
-                        updateTail()
-                    }
                     break;
                 case "R":
                     headX++;
-                    if (!isTailOrthogonal()) {
-                        updateTail()
-                    }
                     break;
                 case "L":
                     headX--;
-                    if (!isTailOrthogonal()) {
-                        updateTail()
-                    }
                     break;
                 default:
                     console.log('unknown direction ' + direction);
                     break;
+            }
+            if (!isTailOrthogonal()) {
+                updateTail()
             }
         }
     }
