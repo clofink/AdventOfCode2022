@@ -45,7 +45,6 @@ function day9Solution1(data) {
                     console.log('unknown direction ' + direction);
                     break;
             }
-            console.log(`head: ${headX},${headY}   tail: ${tailX},${tailY}`);
         }
     }
 
@@ -55,8 +54,6 @@ function day9Solution1(data) {
     }
 
     function isTailOrthogonal() {
-        console.log(Math.abs(headX - tailX));
-        console.log(Math.abs(headY - tailY));
         if (Math.abs(headX - tailX) > 1) {
             return false;
         }
